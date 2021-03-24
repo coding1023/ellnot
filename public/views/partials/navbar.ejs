@@ -1,0 +1,55 @@
+<%- include('./head'); %>
+
+  <nav class="navbar sticky-top navbar-expand-lg bg-white">
+     <button id="top-nav-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseElements" aria-controls="#collapseElements" aria-expanded="false" aria-label="Toggle navigation">
+   <i class="fas fa-bars"></i>
+  </button>
+    <div class="container">
+      <a class="navbar-brand brand-top" href="/"><img class="img-fluid"  src="/public/img/logo.png" alt="" srcset=""></a>
+      <div class="collapse navbar-collapse" id="collapseElements">
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+          <li class="nav-item active ">
+            <a <%if(active=="Home"){%>class="active nav-link link-top"<%} else{%>
+  class="nav-link link-top"
+ <%}%> href="/" >Home</a>
+          </li>
+          <li class="nav-item">   
+            <a <%if(active=="About"){%>class="active nav-link link-top" href="/about"<%} else{%>
+  class="nav-link link-top"
+ <%}%> href="/about">About</a>
+            <li class="nav-item">
+              <a <%if(active=="Contact"){%>class="active nav-link link-top"<%} else{%>
+  class="nav-link link-top"
+ <%}%> href="/contact">Contact</a>
+        </ul>     
+
+  <!-- Right -->
+  <div class="cart-cont jumbotron jumbotron-fluid bg-transparent text-center">
+        <ul class="navbar-nav cart-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link cart-link">
+              <span class="shopping-cart-span-icon">
+              <i class="fas fa-shopping-cart"></i> </span>
+              <div class="cart-row">
+              </div>
+              <div class="cart-container">
+              </div>
+              <div class="cart-total">
+                  <strong>TOTAL:</strong>
+                  <span class="cart-total-amount mt-2 text-success">£0</span>
+              </div>
+              <button class="btn btn-success btn-purchase mt-2" type="button"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 
+ BUY NOW</button>
+          </section>
+            </a>
+          </li>
+        </ul>
+</div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+      </div>
+    </div>
+  </nav>
+
+
