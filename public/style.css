@@ -63,6 +63,9 @@
     width: 100%;
 }
 
+
+
+
 /* category nav */
 .category-nav li{
 clear: both;
@@ -405,6 +408,12 @@ background-color: #fef2f2;
     max-width: 50%;
 }
 
+.main-row-products{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .cart-row{
     height: 40%;
         object-fit: scale-down;
@@ -413,6 +422,52 @@ background-color: #fef2f2;
     height: 100%;
 }
 
+.card{
+ max-width: 50%;
+}
+
+.thumbnail img{
+    min-width: 25vw;
+     min-height: 15vw;
+}
+
+.card-img-top{
+    min-height: 35vw;
+    min-width: auto;
+    max-width: 40vw;
+    max-height: 45vw;
+    object-fit: cover;
+}
+
+footer ul li a{
+   color: #0d0d0d;
+	font-size:6vw;
+    margin: 3em 1em 0 0;
+}
+
+
+.about-footer{
+    font-size:6vw;
+    margin: 3em 1em 0 0;
+}
+
+.logo-ft{
+    min-width: 30vw;
+    margin: 0em 2em 0em 0; 
+}
+
+.copyr-text{
+     font-size:4vw;
+    margin: 2em 1em 0 0;
+}
+
+.logo{
+    min-width: 39vw;
+}
+
+.card{
+      min-width: 80vw;
+}
 
 
 }

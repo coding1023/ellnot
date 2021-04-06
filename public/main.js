@@ -65,6 +65,7 @@ const product = $(button).parents()[1];
     //fire functions:
     addItemToCart(title, price, imageSrc, size)
     updateCartTot()
+    console.log($(product).find('.product-image:eq(0)').attr('src'));
 }
 
 
@@ -176,31 +177,6 @@ function changeQuantity(e) {
     //update total
     updateCartTot()
 }
-
-
-
-//view all or category
-
-//get product card
-var $items = $('.product');
-//get cat-link buttons and add function on click
-var $btns = $('.cat-link').click(function() {
-//if btn id is = all
-  if (this.id == 'all') {
- //show elements
-    $items.show();
-//otherwise
-  } else {
-//
-    var $el = $('.' + this.id).show();
- //elements that are not = $el are hidden
-    $items.not($el).hide();
-  }
-//remove class of active from buttons
-  $btns.removeClass('active');
-//add class of active to clicked (active) button
-  $(this).addClass('active');
-})
 
 }
 

@@ -19,38 +19,23 @@ $(document).on("change", ".products-sorting", function() {
     } else if( sortingMethod == 'size'){
         sortProductsBySize();
     }
-
 });
 
 
 
 // store sorted items to const- reusable chunk of code for various sorting methods
 const appendSortedItems= (sorted)=> {
-// create div
-    let row= document.createElement('div');
-//add class of row row-swap to div
-    $(row).addClass('row row-swap');
 //send get request to get sorted function and store in let variable
-    let got= $(sorted).get()
-   //remove column
-    $('.col-swap').remove()
-   //remove row
-    $('.row-swap').remove()
+
+    let got= $(sorted).get() 
+
 //loop through array of elements $(sorted).get
 for (let i = 0; i < got.length; i++) {
- //get single element iterating             
+ //get single element iterating through sorted elements             
     const element = got[i];
-// create div
-    let col= document.createElement('div')  
-// add class of col
-    $(col).addClass('col-lg-3 col-md-6 mb-4');
-//append col to div -row
-    $(col).appendTo(row)
-// append element to col
-    $(element).appendTo(col)
-//append row to main div container
-    $(row).appendTo('#list')
-}
+//append sorted elements to main row
+$($('.main-row-products')).append(element)
+}  
 }
 //get main container #list
 const $cont = $('#list'); 
